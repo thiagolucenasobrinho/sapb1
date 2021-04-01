@@ -49,7 +49,8 @@ class SAP{
         $cookie='cookie.txt';
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
-        curl_setopt($ch, CURLOPT_COOKIEFILE, $cookie); //Envio o Cookie armazenado no Login
+        //Envio o Cookie armazenado no Login
+        curl_setopt($ch, CURLOPT_COOKIEFILE, $cookie); 
         curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
