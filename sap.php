@@ -13,7 +13,7 @@ class SAP{
         $diff=time()-$data_arq;
         $url=SAP_URL."/Login";
         //Faco a verificacao se o tempo de expiracao da sessao esta proximo, ou se esta sendo forcado o login
-        if($diff>1000 || $force=='force'){
+        if($diff>1000 || $force=='force') {
 
             $dados=array(
                 'CompanyDB'=>SAP_BD,
