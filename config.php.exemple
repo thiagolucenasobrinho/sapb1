@@ -1,0 +1,6 @@
+<?php
+
+define('SAP_USUARIO','');
+define('SAP_SENHA','');
+define('SAP_BD','');
+define('SAP_URL','');
