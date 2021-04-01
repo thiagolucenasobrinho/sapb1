@@ -3,10 +3,10 @@
 Classe para acesso API Rest SAP B1
 */
 class SAP{
-	/*
-	Funcao de Login
-	*/
-	public function login($force=false){        
+    /*
+    Funcao de Login
+    */
+    public function login($force=false){        
         require_once('config.php');
         $cookie='cookie.txt';
         $data_arq=date("U",filemtime($cookie));
