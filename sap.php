@@ -6,7 +6,7 @@ class SAP{
     /*
     Funcao de Login
     */
-    public function login($force=false){        
+    public function Login($force=false){        
         require_once('config.php');
         $cookie='cookie.txt';
         $data_arq=date("U",filemtime($cookie));
@@ -45,7 +45,7 @@ class SAP{
     */
     public function getPN(){
         header('Content-type: application/json');
-        $login=$this->login();
+        $login=$this->Login();
         $url=SAP_URL."/BusinessPartners";
         $cookie='cookie.txt';
         $ch = curl_init();
