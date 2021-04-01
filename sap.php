@@ -30,7 +30,8 @@ class SAP{
             curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
             curl_setopt($ch, CURLOPT_POST, 1);
             curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
-            curl_setopt($ch, CURLOPT_COOKIEJAR, $cookie); //Gravo o Cookie, nao envio nenhum cookie para o SAP
+            //Gravo o Cookie, nao envio nenhum cookie para o SAP
+            curl_setopt($ch, CURLOPT_COOKIEJAR, $cookie);
             $json = curl_exec($ch);
             curl_close($ch);
 
@@ -38,7 +39,7 @@ class SAP{
         }
     }
 
-    #Parceiros de Negocios
+    //Parceiros de Negocios
     /*
     Listo os Parceiros de Negócios
     */
