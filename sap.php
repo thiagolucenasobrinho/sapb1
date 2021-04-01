@@ -45,7 +45,7 @@ class SAP{
     */
     public function getPN(){
         header('Content-type: application/json');
-        $login=$this->Login();
+        $this->Login();
         $url=SAP_URL."/BusinessPartners";
         $cookie='cookie.txt';
         $ch = curl_init();
